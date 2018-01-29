@@ -1,10 +1,30 @@
+.col-md-5 {
+  text-align: left;
+}
+
+.col-md-5 p {
+  font-size: 14px;
+}
+
+.col-md-7 {
+
+}
+
+.project-title {
+  margin: 0 0 8px;
+}
+
+#PROJECTS .row {
+  margin-bottom: 50px;
+}
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   position: relative;
   width: 100%;
   height: 100%;
   color: #010101;
-  background-color: white;
+  background-color: #f1f1f1;
 }
 
 html {
@@ -43,7 +63,7 @@ a {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #42DCA3;
+  color: #010101;
 }
 
 a:focus, a:hover {
@@ -63,7 +83,7 @@ a:focus, a:hover {
   font-size: 14px;
   padding: 11px;
   color: #010101;
-  border: 1px solid white;
+  border: 1px solid #F1F1F1;
 }
 
 #mainNav .navbar-brand {
@@ -115,6 +135,13 @@ a:focus, a:hover {
   #mainNav .nav-link.active:hover {
     color: white;
   }
+  .container {
+    max-width: 800px;
+  }
+  .content-section {
+    padding-top: 120px !important;
+    padding-bottom: 100px !important;
+  }
 }
 
 .masthead {
@@ -159,22 +186,22 @@ a:focus, a:hover {
 }
 
 .btn-circle {
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
+  font-size: 24px;
+  width: 45px;
+  height: 45px;
   margin-top: 15px;
-  line-height: 45px;
+  line-height: 35px;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
-  color: white;
-  border: 2px solid white;
+  color: #010101;
+  border: 1px solid #010101;
   border-radius: 100% !important;
   background: transparent;
 }
 
 .btn-circle:focus, .btn-circle:hover {
-  color: white;
+  color: black;
   outline: none;
   background: rgba(255, 255, 255, 0.1);
 }
