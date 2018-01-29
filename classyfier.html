@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Classyfier</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='vendor/animate/animate.css' rel='stylesheet' type='text/css'>
+    <link href='vendor/morphext/morphext.css' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:400' rel='stylesheet' type='text/css'>
+
+
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+      <div id="nav-container">
+        <a href="../"><i class="fa fa-hand-o-left" aria-hidden="true"></i></a>
+        <!-- <a class="navbar-brand js-scroll-trigger" href="../">Back</a> -->
+      </div>
+    </nav>
+
+  <!-- Page Content -->
+    <div class="container">
+
+      <!-- Portfolio Item Row -->
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="video-responsive">
+            <iframe src="https://player.vimeo.com/video/224465468" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+            <h5 class="project-title">Classyfier</h5>
+            <p>The Classyfier is a table that detects the beverages people consume around it and chooses music that fits the situation accordingly. A built in microphone catches characteristic sounds and then compares these sounds to a catalogue of pre-trained examples. The Classyfier identifies it as belonging to one of three classes; hot beverages, wine or beer. Each class has its own playlist that one can navigate through by knocking on the table.
+    The idea behind this project was to build a smart object that uses machine learning and naturally occurring sounds as input to enhance the ambiance of different situations.</p>
+
+            <h5 class="project-title">How it works</h5>
+            <p>In order to classify the sounds of the objects we first tried using 512 different frequency amplitudes to identify the different sounds with a nearest neighbour algorithm. This didn’t give us satisfying results because particular glasses have a relatively clean tone which only show up at certain frequencies and the surrounding noise would trigger a lot of faulty detections. After a lot of trial and error we ended up using MFCC (Mel Frequency Cepstral Coefficients) values, which are usually only used for voice recognition in combination with the peak frequency, this gave us way better results. Once we figured out the right audio attributes we needed to train the algorithm using Open Frameworks for about 100 times per glass or beer cane to give people a good experience with our prototype.</p>
+        </div>
+
+
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
