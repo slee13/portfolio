@@ -5,6 +5,15 @@
   url('../fonts/PlayfairDisplay-Italic.otf');
 }
 
+@font-face
+{
+  font-family: 'Work Sans', sans-serif;
+}
+
+@@font-face {
+  font-family: 'Inconsolata', monospace;
+}
+
 .col-md-5 {
   text-align: left;
 }
@@ -14,7 +23,7 @@
 }
 
 .col-md-12 p{
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 .col-md-12 {
@@ -31,10 +40,56 @@
   margin: 0 0 8px;
 }
 
+#project-facts {
+  /*position: relative;*/
+  /*min-height: 150px;*/
+  font-size: 8px;
+  font-family: 'Inconsolata', monospace;
+  color: #666;
+}
+
+.project-facts-text {
+  font-family: 'Inconsolata', monospace;
+  color: #666;
+  /*margin-top: 100px;*/
+}
+
+.section-title {
+  border-top: 1px;
+  font-size: 20px;
+  font-family: 'Inconsolata', monospace;
+  color: black;
+  /*background-color: yellow;*/
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 14px;
+  font-family: 'Inconsolata', monospace;
+  color: red;
+  margin-top: 0px;
+}
+
+.section-quote {
+  font-size: 12px;
+  font-family: 'Inconsolata', monospace;
+  color: red;
+  margin-top: 0px;
+}
+
 .row {
   margin-bottom: 20px;
 }
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 
+#yellow-bar {
+  /*background-color: yellow;*/
+  background-image: linear-gradient(to right, #ECEBE4, #ECEBE4 96%, yellow 4%, yellow);
+
+}
 #PROJECTS .row {
   margin-bottom: 50px;
 }
@@ -78,9 +133,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin', 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Inconsolata', monospace;
   font-weight: 400;
-  margin: 0 0 35px;
+  margin: 10px 0 15px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -91,11 +146,19 @@ p {
   margin: 0 0 25px;
 }
 
+strong {
+  color: black;
+}
+
 @media (min-width: 768px) {
   p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     margin: 0 0 35px;
+  }
+  .project-facts-text p{
+    font-size: 14px;
+    font-family: 'Inconsolata', monospace;
   }
 }
 
@@ -183,6 +246,9 @@ a:focus, a:hover {
   .container {
     max-width: 800px;
   }
+  #content-container {
+    max-width:1100px;
+  }
   .content-section {
     padding-top: 120px !important;
     padding-bottom: 100px !important;
@@ -198,6 +264,9 @@ a:focus, a:hover {
   color: #010101;
   /*background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;*/
   background-color: #ECEBE4;
+  /*background-image: linear-gradient(to right, #ECEBE4, #ECEBE4 75%, yellow 25%, yellow);*/
+  background-size: cover;
+	background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -329,14 +398,13 @@ footer p {
 }
 
 ::-moz-selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: yellow;
+  /*background: rgba(255, 255, 255, 0.2);*/
   text-shadow: none;
 }
 
 ::selection {
-  background: #fcfcfc;
-  background: rgba(255, 255, 255, 0.2);
+  background: yellow;
   text-shadow: none;
 }
 
