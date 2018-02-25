@@ -44,6 +44,39 @@
       <!-- Portfolio Item Row -->
       <div class="row">
 
+        <!-- Project overview facts -->
+        <div class="row">
+
+          <div class="col-md-3 align-text-bottom project-facts-text">
+            <h5 class="section-title" style="text-align: left;"> .</h5>
+            <p><strong>MACHINE LEARNING:</strong></p>
+            <p>1 week
+            <br>CIID 2017</p>
+          </div>
+          <div class="col-md-3 project-facts-text">
+            <h5 class="section-title" style="text-align: left;"> .</h5>
+          </div>
+          <div class="col-md-3 project-facts-text">
+            <!-- <h5 class="section-title" style="text-align: left;"> .</h5> -->
+            <!-- <p><strong>PENTA</strong></p> -->
+          </div>
+          <div class="col-md-3 project-facts-text">
+            <h5 class="section-title" style="text-align: left;"> .</h5>
+            <p><strong>TEAM:</strong></p>
+            <p>Kelvyn Marte
+              <br>Benedict Hubener</p>
+          </div>
+
+          <div class="col-md-3 project-facts-text">
+            <h5 class="section-title" style="text-align: left;"> .</h5>
+            <h1 class="section-title" style="color: red; text-align: left;">CLASSYFIER</h1>
+          </div>
+          <div class="col-md-8 col-centered">
+            <h5 class="section-title" style="text-align: left;"> .</h5>
+            <p>The Classyfier is a table that detects the beverages people consume around it and chooses music that fits the situation accordingly. A built in microphone catches characteristic sounds and then compares these sounds to a catalogue of pre-trained examples. The Classyfier identifies it as belonging to one of three classes; hot beverages, wine or beer. Each class has its own playlist that one can navigate through by knocking on the table.
+    The idea behind this project was to build a smart object that uses machine learning and naturally occurring sounds as input to enhance the ambiance of different situations.</p>
+          </div>
+
         <div class="col-md-12">
           <div class="video-responsive">
             <iframe src="https://player.vimeo.com/video/224465468" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -51,10 +84,7 @@
         </div>
 
         <div class="col-md-12">
-            <h5 class="project-title">Classyfier</h5>
-            <p>The Classyfier is a table that detects the beverages people consume around it and chooses music that fits the situation accordingly. A built in microphone catches characteristic sounds and then compares these sounds to a catalogue of pre-trained examples. The Classyfier identifies it as belonging to one of three classes; hot beverages, wine or beer. Each class has its own playlist that one can navigate through by knocking on the table.
-    The idea behind this project was to build a smart object that uses machine learning and naturally occurring sounds as input to enhance the ambiance of different situations.</p>
-
+            <h5 class="project-title" style="text-align:center;">.</h5>
             <h5 class="project-title">How it works</h5>
             <p>In order to classify the sounds of the objects we first tried using 512 different frequency amplitudes to identify the different sounds with a nearest neighbour algorithm. This didn’t give us satisfying results because particular glasses have a relatively clean tone which only show up at certain frequencies and the surrounding noise would trigger a lot of faulty detections. After a lot of trial and error we ended up using MFCC (Mel Frequency Cepstral Coefficients) values, which are usually only used for voice recognition in combination with the peak frequency, this gave us way better results. Once we figured out the right audio attributes we needed to train the algorithm using Open Frameworks for about 100 times per glass or beer cane to give people a good experience with our prototype.</p>
         </div>
