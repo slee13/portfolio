@@ -52,6 +52,55 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  $(document).keydown(function(e) {
+      switch(e.which) {
+        case 49: // 1
+            // window.location.hash = 'overview';
+            $('html,body').animate({
+            scrollTop: ($('#overview').offset().top)
+        });
+        break;
+
+         case 50: // 2
+             // window.location.hash = '#phys-dig';
+             $('html,body').animate({
+             scrollTop: ($('#phys-dig').offset().top)
+         });
+         break;
+
+         case 51: // 3
+             // window.location.hash = '#dig-prod';
+             $('html,body').animate({
+             scrollTop: ($('#dig-prod').offset().top)
+         });
+         break;
+
+         case 52: // 4
+             // window.location.hash = '#mystery';
+             $('html,body').animate({
+             scrollTop: ($('#mystery').offset().top)
+         });
+         break;
+
+         case 53: // 5
+             // window.location.hash = '#summary';
+             $('html,body').animate({
+             scrollTop: ($('#summary').offset().top)
+         });
+         break;
+
+         case 48: // 0
+             // window.location.hash = '#toc';
+             $('html,body').animate({
+             scrollTop: ($('#toc').offset().top)
+         });
+         break;
+         
+         default: return;
+     }
+     e.preventDefault();
+  });
+
 
 
 })(jQuery); // End of use strict
