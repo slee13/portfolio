@@ -127,6 +127,7 @@
     margin: 0 auto;
 }
 
+
 #yellow-bar {
   /*background-color: yellow;*/
   background-image: linear-gradient(to right, #ECEBE4, #ECEBE4 96%, yellow 4%, yellow);
@@ -206,12 +207,16 @@ strong {
     font-size: 14px;
     font-family: 'Inconsolata', monospace;
   }
+
 }
 
 /* add padding to intro text on mobile devices */
 @media (max-width: 768px) {
     .intro-text {
         padding: 12px;
+    }
+    #keys {
+      display:none;
     }
 }
 
@@ -225,6 +230,10 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #FFE323;
+}
+
+.toc:hover {
+  background-color: yellow;
 }
 
 #mainNav {
