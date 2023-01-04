@@ -229,7 +229,9 @@ a {
 
 a:focus, a:hover {
   text-decoration: none;
-  color: #FFE323;
+  /* color: #FFE323; */
+  background-color: yellow;
+	
 }
 
 .toc:hover {
