@@ -230,6 +230,7 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   /* color: #FFE323; */
+  color: #010101;
   background-color: yellow;
 	
 }
