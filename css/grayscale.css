@@ -347,8 +347,6 @@ a:focus, a:hover {
   .masthead {
     height: 100%;
     padding: 0;
-    background-image: none;
-    background-color: #ECEBE4;
   }
   .masthead .intro-body .brand-heading {
     font-size: 100px;
