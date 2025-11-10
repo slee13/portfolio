@@ -181,7 +181,7 @@
     padding: 6px 10px;
   }
   .masthead {
-    background-image: none;
+    background-image: none !important;
     background-color: #ECEBE4;
   }
 }
