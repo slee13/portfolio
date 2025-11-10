@@ -1,8 +1,11 @@
 {
     "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
+    "name": "startbootstrap-grayscalnpx http-servere",
     "version": "4.0.0",
     "description": "A grayscale one page HTML theme for Bootstrap.",
+    "scripts": {
+        "dev": "npx http-server -p 8080"
+    },
     "keywords": [
         "css",
         "sass",
