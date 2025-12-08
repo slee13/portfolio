@@ -266,10 +266,23 @@ strong {
 
 }
 
+/* #jump-to-section {
+  h5 {
+    color: rgb(255, 40, 40);
+  }
+  h5:hover {
+    color: #010101;
+    background-color: rgb(255, 40, 40);
+  }
+} */
+
 /* add padding to intro text on mobile devices */
 @media (max-width: 768px) {
     .intro-text {
         padding: 12px;
+    }
+    #jump-to-section {
+      display:none;
     }
     #keys {
       display:none;
